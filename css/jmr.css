@@ -1,0 +1,10 @@
+body {
+    background: #333;
+}
+
+h1 {
+    color: #fff;
+    font-family: consolas;
+    text-align: center;
+    font-size: 48px;
+}
