@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>* (It's a red guitar.)</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            cursor: pointer;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <img id="playImage" src="../images/guitar.gif">
+
+    <audio id="sound" src="../audios/findher.ogg"></audio>
+
+    <script>
+        const img = document.getElementById("playImage");
+        const sound = document.getElementById("sound");
+
+        img.addEventListener("click", () => {
+            if (sound.paused) {
+                sound.play();
+            } else {
+                sound.pause();
+            }
+        });
+    </script>
+
+</body>
+</html>
