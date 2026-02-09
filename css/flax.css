@@ -1,5 +1,5 @@
 body {
-    background: #222;
+    background: linear-gradient(0deg, #a96db0 0%, #a671ad 25%, #171717 100%);
     cursor: url("../images/Flaxcursor.png"), auto;
 }
 
