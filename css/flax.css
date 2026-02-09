@@ -29,3 +29,13 @@ button {
     font-size: 15.5px;
     font-style: italic;
 }
+
+/* Container styles | Lmao this sucks
+.container {
+  display: table-cell;
+  vertical-align: bottom;
+  width: 400px;
+  height: 300px;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
