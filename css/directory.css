@@ -1,0 +1,21 @@
+body {
+      background: #111;
+      color: #eee;
+      font-family: system-ui;
+      padding: 2rem;
+}
+   
+backtext {
+    color: #fff;
+}
+
+a {
+      display: block;
+      color: #8ab4f8;
+      text-decoration: none;
+      margin: 0.5rem 0;
+}
+    
+a:hover {
+      text-decoration: underline;
+}
