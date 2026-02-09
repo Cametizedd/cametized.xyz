@@ -4,11 +4,13 @@ body {
 
 h1 {
     color: #fff;
-    font-family: consolas;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     text-align: center;
     font-size: 48px;
 }
 
 p {
     color: #fff;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
 }
