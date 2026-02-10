@@ -20,6 +20,12 @@ p {
     text-align: center;
 }
 
+div {
+    color: #fff;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+}
+
 button {
     padding: 12px 28px;
     border-radius: 999px;
