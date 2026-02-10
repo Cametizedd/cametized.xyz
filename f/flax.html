@@ -42,6 +42,12 @@
 
     <audio id="audioPlayer"></audio>
 
+    <div id="clockBar">
+    <span id="clock">00:00:00</span>
+    <span id="season">Season: Winter</span>
+    </div>
+
+
     <script>
         const headers = [
             "hi flaxez page",
@@ -75,6 +81,49 @@
         audio.play();
     }
     </script>
+
+    <script>
+    function updateClockAndSeason() {
+        const now = new Date();
+
+        // Clock
+        const time = now.toLocaleTimeString("en-US", { hour12: false });
+        document.getElementById("clock").textContent = time;
+
+        // Seasons (meteorological)
+        const month = now.getMonth(); // 0 = Jan
+        let season = "";
+
+        if (month === 11 || month <= 1) season = "Winter";
+        else if (month <= 4) season = "Spring";
+        else if (month <= 7) season = "Summer";
+        else season = "Fall";
+
+        document.getElementById("season").textContent = `Season: ${season}`;
+
+        // Snow logic
+        if (season === "Winter") {
+            createSnowflake();
+        }
+    }
+
+    function createSnowflake() {
+        const snowflake = document.createElement("div");
+        snowflake.className = "snowflake";
+        snowflake.textContent = "*";
+        snowflake.style.left = Math.random() * window.innerWidth + "px";
+        snowflake.style.animationDuration = 2 + Math.random() * 3 + "s";
+        snowflake.style.opacity = Math.random();
+
+        document.body.appendChild(snowflake);
+
+        setTimeout(() => {
+            snowflake.remove();
+        }, 5000);
+    }
+
+    setInterval(updateClockAndSeason, 1000);
+</script>
 
     <script type="text/javascript">
     // <![CDATA[
