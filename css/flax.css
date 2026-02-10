@@ -54,11 +54,23 @@ button:active {
 /* Snow */
 .snowflake {
     position: fixed;
-    top: -10px;
+    top: -20px;          /* ALWAYS start above the screen */
     color: white;
-    font-size: 14px;
+    font-family: monospace;
     pointer-events: none;
-    animation: fall linear forwards;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
 }
 
 @keyframes fall {
