@@ -90,7 +90,7 @@ h2 {
     margin-left: 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s ease;
+    transition: max-height 0.30s ease;
 }
 
 .children.open {
@@ -100,7 +100,7 @@ h2 {
 .folder::after {
     content: "▼";
     margin-left: auto;
-    transition: transform 0.25s ease;
+    transition: transform 0.50s ease;
 }
 
 .folder.open::after {
