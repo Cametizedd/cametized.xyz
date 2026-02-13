@@ -57,12 +57,12 @@ body.dark .window-bar {
 .window-left {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .window-icon {
-  width: 14px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .window-title {
