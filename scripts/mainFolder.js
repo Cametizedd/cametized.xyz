@@ -1,25 +1,64 @@
 const fileSystem = [
     {
-        name: "projects :)",
+        name: "projects/work",
         type: "folder",
         children: [
             {
-                name: "github",
+                name: "github.com account",
                 type: "link",
                 url: "https://github.com/cametized"
+            },
+            {
+                name: "website source code",
+                type: "link",
+                url: "https://github.com/cametized/cametized.xyz"
             }
         ]
     }, // dude lowk the file system is so messy to look at probably when i add more stuff but i cannot be bothered 1 bit to clean it up 
     {  // and plus its easy to add things so like fuck off lowk :D
-        name: "erm my socialers",
+        name: "socials",
         type: "folder",
         children: [
             {
-                name: "YouTube",
+                name: "youtube channel",
                 type: "link",
                 url: "https://youtube.com/@cametized"
+            },
+            {
+                name: "steam account",
+                type: "link",
+                url: "https://steamcommunity.com/id/Cametized"
+            },
+            {
+                name: "roblox account | i know, bad idea to link this in 2026 lo",
+                type: "link",
+                url: "https://www.roblox.com/users/7554529574/profile"
+            },
+            
+            {
+                name: "less active stuff",
+                type: "folder",
+                children: [
+                    {
+                name: "twitter/x (barely active)",
+                type: "link",
+                url: "https://x.com/cametized"
+            },
+            {
+                name: "bluesky (barely active)",
+                type: "link",
+                url: "https://bsky.app/profile/cametized.xyz"
+            }
+                ]
             }
         ]
+
+        
+    },
+    {
+        name: "friends",
+        type: "link",
+        url: "https://cametized.xyz/directories"
     }
 ];
 
@@ -56,7 +95,7 @@ function createItem(item) { // god i hate my life i love js
         link.href = item.url;
         link.target = "_blank";
         link.className = "item link";
-        link.innerHTML = "🔗 " + item.name;
+        link.innerHTML = "🔗 " + item.name; // please replace with an image i beg lo, same for folder --past cam
         return link;
     }
 }
