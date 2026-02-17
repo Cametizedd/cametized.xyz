@@ -58,7 +58,7 @@ const fileSystem = [
     {
         name: "friends",
         type: "link",
-        url: "../dir"
+        url: "../dir.html"
     },
     {
         name: "the peak inc. (discord)",
