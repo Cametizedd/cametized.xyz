@@ -58,7 +58,7 @@ const fileSystem = [
     {
         name: "friends",
         type: "link",
-        url: "https://cametized.xyz/directories"
+        url: "../directories.html"
     },
     {
         name: "the peak inc. (discord)",
