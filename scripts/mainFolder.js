@@ -56,6 +56,22 @@ const fileSystem = [
         
     },
     {
+        name: "subdomains",
+        type: "folder",
+        children: [
+            {
+                name: "blog",
+                type: "link",
+                url: "https://blog.cametized.xyz"
+            },
+            {
+                name: "tria",
+                type: "link",
+                url: "https://tria.cametized.xyz"
+            }
+        ]
+    },
+    {
         name: "friends",
         type: "link",
         url: "../dir.html"
@@ -64,11 +80,6 @@ const fileSystem = [
         name: "the peak inc. (discord)",
         type: "link",
         url: "https://discord.gg/X8PT8eU3RP"
-    },
-    {
-        name: "tria difficulty list",
-        type: "link",
-        url: "https://tria.cametized.xyz/tdl"
     }
 ];
 
