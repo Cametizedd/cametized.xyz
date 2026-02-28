@@ -64,6 +64,11 @@ const fileSystem = [
         name: "the peak inc. (discord)",
         type: "link",
         url: "https://discord.gg/X8PT8eU3RP"
+    },
+    {
+        name: "tria difficulty list",
+        type: "link",
+        url: "https://tria.cametized.xyz/tdl"
     }
 ];
 
